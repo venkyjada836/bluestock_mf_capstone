@@ -1,0 +1,45 @@
+DAY 1 DATA QUALITY SUMMARY
+
+Project: Bluestock Mutual Fund Capstone
+
+Datasets Analysed:
+
+1. HDFC Top 100
+2. SBI Bluechip
+3. ICICI Bluechip
+4. Nippon Large Cap
+5. Axis Bluechip
+6. Kotak Bluechip
+
+Data Source:
+mfapi.in
+
+Checks Performed:
+
+* File ingestion validation
+* Dataset shape verification
+* Data type inspection
+* Missing value analysis
+* Duplicate record analysis
+* Sample record verification
+
+Results:
+
+* All datasets successfully downloaded and loaded.
+* All datasets contain two columns: date and nav.
+* No missing values detected.
+* No duplicate rows detected.
+* NAV column correctly stored as float.
+* Date column requires conversion to datetime format.
+
+Record Counts:
+
+* Axis Bluechip: 3565
+* HDFC Top 100: 3091
+* ICICI Bluechip: 3307
+* Kotak Bluechip: 3301
+* Nippon Large Cap: 3298
+* SBI Bluechip: 3236
+
+Conclusion:
+The datasets passed all initial quality checks and are ready for cleaning, transformation, and loading into SQLite for further analysis.
